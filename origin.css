@@ -1,0 +1,244 @@
+/* First season: a compact editorial sequence. */
+.origin {
+  max-width: 1120px;
+  padding-top: clamp(78px, 8vw, 122px);
+  padding-bottom: clamp(94px, 10vw, 150px);
+}
+
+.origin h2,
+.origin h3,
+.origin-close p {
+  color: var(--paper);
+  font-family: Oswald, sans-serif;
+  font-weight: 620;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.origin-intro { max-width: 780px; }
+.origin h2 { margin: 0; font-size: clamp(43px, 4.3vw, 64px); }
+
+.origin-intro > p,
+.origin-season-result p {
+  color: #d4cec4;
+  font-size: clamp(17px, 1.45vw, 20px);
+  font-family: Manrope, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.origin-intro > p { max-width: 665px; margin: 24px 0 0; }
+.origin-intro > .origin-season-summary { margin-top: 14px; }
+
+.origin-intro a {
+  color: #5f9ee6;
+  text-decoration: none;
+}
+
+.origin-intro a:hover { color: #8abaff; text-decoration: underline; text-underline-offset: 3px; }
+
+.origin-guests {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: clamp(38px, 8vw, 118px);
+  margin-top: clamp(56px, 6vw, 88px);
+  align-items: center;
+}
+
+.origin h3 { margin: 0; font-size: clamp(30px, 3vw, 44px); }
+
+.guest-portraits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 132px));
+  justify-content: center;
+  gap: clamp(18px, 3vw, 42px);
+  align-items: center;
+}
+
+.guest-portraits figure { width: 100%; margin: 0; }
+
+.guest-portraits img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: saturate(.88) contrast(1.04);
+}
+
+.guest-portraits figcaption {
+  margin-top: 11px;
+  color: #bdb7ad;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.guest-more {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 1;
+  align-content: center;
+  justify-items: center;
+  margin: 0;
+  color: #cdc6bb;
+  border: 1px solid #5d5951;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.guest-more strong {
+  color: var(--paper);
+  font-family: Oswald, sans-serif;
+  font-size: clamp(34px, 3.1vw, 46px);
+  font-weight: 620;
+  letter-spacing: -0.04em;
+  line-height: .8;
+}
+
+.guest-more span {
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.origin-results {
+  max-width: 650px;
+  margin-top: clamp(52px, 6vw, 76px);
+}
+
+.origin-featured {
+  display: grid;
+  grid-template-columns: minmax(170px, .87fr) minmax(190px, .8fr);
+  margin: 0;
+  overflow: hidden;
+  background: #171815;
+  border: 1px solid #3d3b35;
+}
+
+.origin-featured img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 166px;
+  object-fit: cover;
+  filter: saturate(.83) contrast(1.06);
+}
+
+.origin-featured figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  padding: 22px 24px;
+  background: #171815;
+}
+
+.origin-featured span { color: #a9a398; font-size: 12px; font-weight: 560; letter-spacing: .01em; line-height: 1.3; text-transform: uppercase; }
+.origin-featured strong { color: #d1b56d; font-family: Manrope, Arial, sans-serif; font-size: clamp(29px, 2.55vw, 38px); font-weight: 720; letter-spacing: -0.04em; line-height: 1; }
+.origin-featured strong small { color: #b8aa85; font-size: .48em; font-weight: 620; letter-spacing: -0.02em; }
+.origin-featured b { color: #eee8da; font-size: 16px; font-weight: 610; letter-spacing: -0.02em; line-height: 1.18; }
+
+.origin-audience { margin-top: clamp(82px, 9vw, 132px); }
+.origin-audience h3 { line-height: 1.04; }
+
+.audience-comments {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+  margin-top: clamp(32px, 4vw, 50px);
+}
+
+.viewer-comment {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-avatar { display: block; width: 46px; height: 46px; margin-top: 9px; border-radius: 50%; background-color: #b8b2a8; }
+.avatar-one { background: #c86a5a; }
+.avatar-two { background: #7797ad; }
+.avatar-three { background: #b49a70; }
+.avatar-four { background: #7e9e80; }
+.viewer-comment p {
+  position: relative;
+  margin: 0;
+  padding: 15px 19px;
+  color: #1c1b19;
+  background: #f4f1eb;
+  border-radius: 5px 15px 15px 15px;
+  font-size: clamp(18px, 1.42vw, 21px);
+  font-weight: 610;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.viewer-comment p::before {
+  position: absolute;
+  top: 14px;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  background: #f4f1eb;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.origin-close {
+  display: grid;
+  gap: 17px;
+  margin-top: clamp(76px, 8vw, 118px);
+}
+
+.origin-close::before {
+  display: block;
+  width: 58px;
+  height: 3px;
+  background: #e64747;
+  content: "";
+}
+
+.origin-close p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--paper);
+  font-family: Manrope, Arial, sans-serif;
+  font-size: clamp(28px, 2.9vw, 40px);
+  font-weight: 620;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+  text-transform: none;
+}
+
+.origin-close strong { color: #e64747; font-weight: 760; white-space: nowrap; }
+
+@media (max-width: 850px) {
+  .origin { padding-top: 72px; padding-bottom: 90px; }
+  .origin h2 { font-size: 48px; white-space: nowrap; }
+  .origin-intro > p { margin-top: 20px; font-size: 16px; }
+  .origin-guests { grid-template-columns: 1fr; gap: 28px; margin-top: 52px; }
+  .origin h3 { font-size: 36px; }
+  .guest-portraits { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; max-width: 390px; }
+  .guest-portraits figcaption { margin-top: 8px; font-size: 9px; letter-spacing: -0.035em; white-space: nowrap; }
+  .guest-more { grid-column: auto; margin: 0; }
+  .guest-more strong { font-size: 32px; }
+  .guest-more span { margin-top: 4px; font-size: 10px; }
+  .origin-results { max-width: none; margin-top: 44px; }
+  .origin-featured { grid-template-columns: 1.05fr 1fr; }
+  .origin-featured img { min-height: 155px; }
+  .origin-featured figcaption { gap: 7px; padding: 17px; }
+  .origin-featured strong { font-size: 28px; }
+  .origin-featured b { font-size: 14px; }
+  .origin-audience { margin-top: 78px; }
+  .origin-audience h3 { max-width: 350px; }
+  .audience-comments { gap: 12px; margin-top: 32px; }
+  .viewer-comment { grid-template-columns: 40px minmax(0, 1fr); gap: 12px; }
+  .comment-avatar { width: 40px; height: 40px; margin-top: 8px; }
+  .viewer-comment p { padding: 14px 16px; font-size: 17px; }
+  .origin-close { gap: 13px; margin-top: 70px; }
+  .origin-close p { max-width: none; font-size: clamp(19px, 5.2vw, 23px); white-space: nowrap; }
+}

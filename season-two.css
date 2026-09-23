@@ -1,0 +1,143 @@
+/* Season two: one grounded rule change, one narrative image. */
+.format-section {
+  overflow: hidden;
+  padding: clamp(88px, 11vw, 150px) 0 0;
+  background: linear-gradient(to bottom, var(--paper) 0 calc(100% - 92px), var(--ink) calc(100% - 92px) 100%);
+}
+
+.format-layout { display: grid; gap: clamp(52px, 7vw, 94px); }
+
+.format-heading {
+  display: grid;
+  grid-template-columns: minmax(300px, .92fr) minmax(360px, .74fr);
+  justify-content: space-between;
+  gap: clamp(32px, 8vw, 140px);
+  align-items: end;
+}
+
+.format-heading h2 {
+  max-width: 670px;
+  margin: 0;
+  font-size: clamp(44px, 5.45vw, 80px);
+  line-height: 1.03;
+}
+
+.format-heading > p {
+  max-width: 505px;
+  margin: 0 0 5px;
+  color: #66615b;
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.5;
+}
+
+.format-changes { display: grid; gap: clamp(58px, 8vw, 110px); }
+
+.format-change {
+  display: grid;
+  grid-template-columns: minmax(255px, .8fr) minmax(360px, 1.05fr);
+  gap: clamp(32px, 8vw, 140px);
+  align-items: start;
+}
+
+.format-change h3 {
+  max-width: 440px;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: clamp(31px, 3.25vw, 48px);
+  font-weight: 620;
+  letter-spacing: -.025em;
+  line-height: .98;
+  text-transform: uppercase;
+}
+
+.format-change > p,
+.format-game-copy > p {
+  max-width: 620px;
+  margin: 0;
+  color: #5f5a54;
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.52;
+}
+
+.format-game {
+  grid-template-columns: minmax(290px, .72fr) minmax(500px, 1.28fr);
+  align-items: center;
+  min-height: clamp(390px, 38vw, 545px);
+  padding-top: clamp(36px, 5vw, 70px);
+  border-top: 1px solid #c8c1b7;
+  overflow: hidden;
+}
+
+.format-game-copy { display: grid; gap: 22px; }
+
+.format-game-principle {
+  margin-top: 9px !important;
+  color: #26231f !important;
+  font-size: clamp(19px, 1.9vw, 27px) !important;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: 1.22 !important;
+}
+
+.format-game-principle strong { color: #e23838; font-weight: 760; }
+
+.format-game-image {
+  position: relative;
+  align-self: end;
+  justify-self: end;
+  width: min(100%, 590px);
+  margin: 0 0 calc(-1 * clamp(38px, 5vw, 66px)) 0;
+  pointer-events: none;
+}
+
+.format-game-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 555px;
+  object-fit: contain;
+  object-position: bottom right;
+  filter: drop-shadow(0 5px 10px rgba(45, 35, 27, .18)) drop-shadow(0 20px 30px rgba(45, 35, 27, .2));
+}
+
+.format-close {
+  max-width: 790px;
+  margin: clamp(2px, 1.1vw, 16px) 0 0;
+  color: #282622;
+  font-size: clamp(21px, 2.25vw, 31px);
+  font-weight: 650;
+  letter-spacing: -.03em;
+  line-height: 1.3;
+}
+
+@media (max-width: 850px) {
+  .format-section {
+    padding: 76px 0 0;
+    background: linear-gradient(to bottom, var(--paper) 0 calc(100% - 76px), var(--ink) calc(100% - 76px) 100%);
+  }
+  .format-layout { gap: 50px; }
+  .format-heading,
+  .format-change,
+  .format-game { grid-template-columns: 1fr; gap: 21px; }
+  .format-heading h2 { font-size: clamp(39px, 11.7vw, 50px); }
+  .format-heading > p { font-size: 16px; }
+  .format-changes { gap: 58px; }
+  .format-change h3 { font-size: clamp(30px, 9vw, 39px); }
+  .format-change > p,
+  .format-game-copy > p { font-size: 16px; }
+  .format-game-copy { gap: 17px; }
+  .format-game-principle { font-size: 21px !important; }
+  .format-game {
+    min-height: 0;
+    padding-top: 35px;
+    gap: 18px;
+  }
+  .format-game-image {
+    width: min(100%, 420px);
+    margin: 2px 0 -36px auto;
+  }
+  .format-game-image img { max-height: none; }
+  .format-close { margin-top: 18px; font-size: 22px; }
+}
