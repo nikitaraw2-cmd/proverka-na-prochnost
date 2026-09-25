@@ -87,6 +87,16 @@
   .launch-flow { width: 100%; max-width: 960px; min-height: 280px; }
   .launch-close { max-width: 800px; margin: 0; }
 
+  /* Purpose stays readable as a complete statement before the commercial offer. */
+  .purpose { padding: clamp(106px, 10vw, 144px) 0; }
+  .purpose-layout { grid-template-columns: 1fr; row-gap: 42px; }
+  .purpose h2 {
+    max-width: 980px;
+    font-size: clamp(50px, 4.5vw, 68px);
+  }
+  .purpose-goals { width: 100%; max-width: 940px; }
+  .purpose-partner { width: 100%; max-width: 940px; }
+
   /* Partnership: one vertical set of offers, no competing horizontal tracks. */
   .partners { padding: clamp(106px, 10vw, 144px) 0; }
   .partners-layout { display: grid; grid-template-columns: 1fr; row-gap: 42px; }

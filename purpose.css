@@ -1,0 +1,99 @@
+/* Project purpose: a brief statement of intent, grounded by the social partner. */
+.purpose {
+  padding: clamp(104px, 13vw, 180px) 0;
+  background: #e9e5dc;
+  color: var(--ink);
+}
+
+.purpose-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, .82fr) minmax(510px, 1.18fr);
+  column-gap: clamp(58px, 10vw, 166px);
+  row-gap: clamp(38px, 4vw, 56px);
+  align-items: start;
+}
+
+.purpose h2 {
+  max-width: 520px;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: clamp(44px, 5.1vw, 74px);
+  font-weight: 620;
+  letter-spacing: -.03em;
+  line-height: 1.03;
+  text-transform: uppercase;
+}
+
+.purpose-goals {
+  border-top: 1px solid #b9b3a9;
+}
+
+.purpose-goals article {
+  display: grid;
+  grid-template-columns: minmax(180px, .68fr) minmax(250px, 1fr);
+  gap: clamp(28px, 4vw, 60px);
+  padding: clamp(28px, 3vw, 42px) 0;
+  border-bottom: 1px solid #b9b3a9;
+}
+
+.purpose-goals h3 {
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: clamp(27px, 2.7vw, 39px);
+  font-weight: 620;
+  letter-spacing: -.022em;
+  line-height: .97;
+  text-transform: uppercase;
+}
+
+.purpose-goals p {
+  max-width: 480px;
+  margin: 0;
+  color: #4f4a43;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.5;
+}
+
+.purpose-partner {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: clamp(8px, 1vw, 16px);
+}
+
+.purpose-partner img {
+  display: block;
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.purpose-partner p { margin: 0; }
+.purpose-partner span,
+.purpose-partner strong { display: block; }
+
+.purpose-partner span {
+  color: #625d55;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.purpose-partner strong {
+  margin-top: 3px;
+  font-size: clamp(17px, 1.5vw, 22px);
+  letter-spacing: -.02em;
+  line-height: 1.2;
+}
+
+@media (max-width: 850px) {
+  .purpose { padding: 88px 0 92px; }
+  .purpose-layout { grid-template-columns: 1fr; row-gap: 34px; }
+  .purpose h2 { max-width: 360px; font-size: clamp(39px, 10.5vw, 47px); }
+  .purpose-goals article { grid-template-columns: 1fr; gap: 14px; padding: 28px 0 30px; }
+  .purpose-goals h3 { font-size: 31px; }
+  .purpose-goals p { font-size: 16px; }
+  .purpose-partner { grid-column: auto; gap: 15px; padding-top: 0; }
+  .purpose-partner img { width: 56px; height: 56px; }
+}
