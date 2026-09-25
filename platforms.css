@@ -24,14 +24,6 @@
   text-transform: uppercase;
 }
 
-.platforms-copy p {
-  max-width: 500px;
-  margin: 30px 0 0;
-  color: #5f5a53;
-  font-size: clamp(16px, 1.28vw, 19px);
-  line-height: 1.52;
-}
-
 .youtube-channel {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -45,15 +37,14 @@
 
 .youtube-channel-mark {
   grid-column: 1 / -1;
-  width: max-content;
-  padding-bottom: 8px;
   color: var(--red);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .055em;
-  line-height: 1;
-  text-transform: uppercase;
-  border-bottom: 3px solid var(--red);
+  line-height: 0;
+}
+
+.youtube-channel-mark svg {
+  display: block;
+  width: 33px;
+  height: auto;
 }
 
 .youtube-channel strong {
@@ -121,21 +112,10 @@
   text-transform: uppercase;
 }
 
-.platforms-note {
-  grid-column: 1 / -1;
-  max-width: 660px;
-  margin: -14px 0 0;
-  color: #746f68;
-  font-size: 13px;
-  line-height: 1.45;
-}
-
 @media (max-width: 850px) {
   .platforms { padding: 88px 0 102px; }
   .platforms-layout { grid-template-columns: 1fr; row-gap: 37px; }
   .platforms-copy h2 { max-width: 360px; font-size: clamp(39px, 10.5vw, 47px); }
-  .platforms-copy p { margin-top: 23px; font-size: 16px; }
-
   .youtube-channel { min-height: 0; padding-top: 27px; }
   .youtube-channel strong { font-size: 39px; }
   .youtube-channel-meta { font-size: 15px; }
@@ -144,5 +124,4 @@
   .platforms-new p { font-size: 16px; }
   .platforms-new ul { grid-template-columns: 1fr; gap: 12px; }
   .platforms-new li { font-size: 31px; }
-  .platforms-note { grid-column: auto; margin: -14px 0 0; font-size: 12px; }
 }

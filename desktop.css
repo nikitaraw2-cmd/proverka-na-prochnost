@@ -70,10 +70,8 @@
     font-size: clamp(50px, 4.5vw, 68px);
   }
 
-  .platforms-copy p { max-width: 720px; margin-top: 25px; }
   .youtube-channel { width: 100%; max-width: 940px; }
   .platforms-new { width: 100%; max-width: 940px; }
-  .platforms-note { margin-top: -6px; }
 
   /* Launch: the explanation is one group, followed by one complete map. */
   .launch-section { padding: clamp(106px, 10vw, 144px) 0; }
