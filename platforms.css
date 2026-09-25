@@ -5,6 +5,9 @@
   color: var(--ink);
 }
 
+/* The preceding section shares the same surface, so its trailing space is part of this transition. */
+.content-engine + .platforms { padding-top: clamp(54px, 7vw, 82px); }
+
 .platforms-layout {
   display: grid;
   grid-template-columns: minmax(300px, .82fr) minmax(510px, 1.18fr);
@@ -37,14 +40,19 @@
 
 .youtube-channel-mark {
   grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 29px;
   color: var(--red);
-  line-height: 0;
 }
 
 .youtube-channel-mark svg {
+  flex: 0 0 auto;
   display: block;
-  width: 33px;
-  height: auto;
+  width: 40px;
+  height: 29px;
+  overflow: visible;
 }
 
 .youtube-channel strong {
@@ -114,6 +122,8 @@
 
 @media (max-width: 850px) {
   .platforms { padding: 88px 0 102px; }
+  .content-engine { padding-bottom: 74px; }
+  .content-engine + .platforms { padding-top: 42px; }
   .platforms-layout { grid-template-columns: 1fr; row-gap: 37px; }
   .platforms-copy h2 { max-width: 360px; font-size: clamp(39px, 10.5vw, 47px); }
   .youtube-channel { min-height: 0; padding-top: 27px; }
